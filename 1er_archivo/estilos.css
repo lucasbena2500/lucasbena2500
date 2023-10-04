@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+   
+
+body{
+    font-family: mkletra;
+}
+@font-face{
+    font-family: mkletra;
+    src: url(.//fuentes/mkletra.ttf)
+}
+
+h1{
+    font-family: mkletra;
+    background-image: url(.//img/mkfondo.jpg);
+    background-repeat: none;
+    background-size:contain;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    padding: 1rem;
+   border: solid 10px rgb(228, 173, 71);
+   
+   
+}
+.navegacion{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(241, 241, 108);
+    border: solid black 5px;
+
+}
+.navegacion a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    font-family: mkletra;
+    color: white;
+    font-size: 20px;
+    padding: 1rem;
+    
+}
+.navegacion a:hover{
+display: flex;
+flex-direction: row;
+    background-color: rgb(182, 143, 71);
+color: orange;
+border: solid rgb(231, 121, 70);
+padding: 0.8rem;
+}
+
+
+.descatados{
+    text-align: center;
+    list-style: none;
+}
+.descatados span{
+    font-size: 30px;
+    text-decoration: underline;
+}
+p{
+    text-align: center;
+}
+.spanh2{
+    font-size: 50px;
+    background-color: orange;
+    border: solid black;
+    text-align: center;
+}
+
+
+.letra_grande{
+    font-size: 1.65rem;
+    font-weight: 700;
+}
+.letra_grande1{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#cuadro_central{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "hielo section Scorpion"
+    "hielo section Scorpion"
+    "hielo section Scorpion"
+    "footer footer footer"
+    ;
+   
+grid-template-columns: min-content 1fr min-content;
+grid-template-rows: 24,5% 50px;
+
+}
+header{
+    grid-area: header;
+}
+aside1{
+    grid-area: Scorpion;
+    
+}
+aside{
+    grid-area: hielo;
+    
+}
+section{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
+
+.div_texto{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.scorpion1{
+    
+    border-radius: 2%;
+    box-shadow: 0px 0px 100px black;
+    align-content: stretch;
+}
+
+.hielo1{
+    border-radius: 2%;
+    box-shadow: 0px 0px 100px black;
+}
+button{
+    font-family: mkletra;
+}
+
+
